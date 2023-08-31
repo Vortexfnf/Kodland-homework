@@ -23,5 +23,8 @@ def hello_world():
 def Page2():
     return f'<p>{random.choice(facts_list)}</p>'
 
+@app.route("/Page3")
+def Page3():
+    return '<p>Hello! and welcome to the 3rd page</p>'
 
 app.run(debug=True)
